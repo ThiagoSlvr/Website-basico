@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<Html lang="pt-br">
+
+<head>
+    <title>Avatar: a Lenda de Aang</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 id="espaço">pad</h1>
+        <h1 id="titulo">Avatar a Lenda de Aang</h1>
+        <img src="../assets/header.png" alt="Avatar">
+        <nav id="barraNavegacao">
+            <button onclick="location.href='../index.html'" type="button">Introdução</button>
+            <button onclick="location.href='enredo.html'" type="button">Enredo</button>
+            <button onclick="location.href='personagens.html'" type="button">Personagens</button>
+            <button onclick="location.href='elementos.html'" type="button">Elementos</button>
+            <button onclick="location.href='trivia.html'" type="button">Trivia</button>
+        </nav>
+
+    </header>
+
+    <section id='formulario'>
+        <br>
+
+        <h2>Preencha para receber novidades sobre o mundo de Avatar!</h2>
+
+        <br>
+
+        <form onsubmit="return false;">
+            <fieldset>
+                Nome: <input type="text" name='firstname' required>
+                <br><br>
+                Sobrenome: <input type="text" name='lastname' required>
+                <br><br>
+                Personagem favorito: <select id='favorito' required>
+                    <option value="Aang">Aang</option>
+                    <option value="Katara">Katara</option>
+                    <option value="Sokka">Sokka</option>
+                    <option value="Sukki">Sukki</option>
+                    <option value="Toph">Toph</option>
+                    <option value="Zuko">Zuko</option>
+                </select>
+                <br><br>
+                Data de nascimento: <input type="date" id='idade' required>
+                <br><br>
+                Email: <input type="email" name="Email" required>
+                <br><br>
+                <button onclick="verifica()">Submit</button>
+            </fieldset>
+        </form>
+        <br>
+    </section>
+
+    <footer id='footer'>Projeto Sistemas para Internet II - 2021</footer>
+</body>
+
+</Html>
